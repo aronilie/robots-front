@@ -1,46 +1,56 @@
-# Getting Started with Create React App
+# Components
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+## RobotCard
 
-## Available Scripts
+- Receives: A robot and the state of robot properties
 
-In the project directory, you can run:
+- State: None
 
-### `npm start`
+- Show:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  - An image
+  - Velocity (0-10)
+  - Resistance (0-10)
+  - Creation date
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- User actions: Write the properties of the robot
 
-### `npm test`
+## RobotList
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Receives: Nothing
 
-### `npm run build`
+- State: The list of robots from context
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Show: A list of robots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- User actions: None
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Button
 
-### `npm run eject`
+- Receives: Text to show
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- State: None
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Show: A button with the text received
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- User actions: When it is clicked it will submit the form
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## ButtonList
 
-## Learn More
+- Receives: Nothing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- State: The list of buttons from context
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Show: A list of buttons
+
+- User actions: None
+
+## Form
+
+- Receives: Nothing
+
+- State: None
+
+- Show: An input and a submit button
+
+- User actions: Write the properties of the robot
