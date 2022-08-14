@@ -1,4 +1,4 @@
-import { loadRobotsAction } from "./actionCreators";
+import { loadRobotsAction } from "../actionCreators/actionCreators";
 import { robotsReducer } from "./robotsReducer";
 
 describe("Given a robotsReducer reducer", () => {
