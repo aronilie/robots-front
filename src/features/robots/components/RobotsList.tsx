@@ -12,7 +12,10 @@ const RobotsList = (): JSX.Element => {
 
   const APIUrl = process.env.REACT_APP_API_URL as string;
 
-  const repositoryRobots = useMemo(() => new RestRepository<Robot>(APIUrl), []);
+  const repositoryRobots = useMemo(
+    () => new RestRepository<Robot>(APIUrl),
+    [APIUrl]
+  );
 
   useEffect(() => {
     repositoryRobots
