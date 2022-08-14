@@ -3,10 +3,10 @@ interface RestRepositoryType<T> {
 }
 
 export class RestRepository<T> implements RestRepositoryType<T> {
-  constructor(private url: string) {}
+  constructor(private APIUrl: string) {}
 
   async loadRobots() {
-    const response = await fetch(this.url);
+    const response = await fetch(this.APIUrl);
     return response.json();
   }
 }
