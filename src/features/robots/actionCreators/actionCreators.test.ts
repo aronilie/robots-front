@@ -7,7 +7,7 @@ describe("Given a loadRobotsAction function", () => {
         {
           _id: "",
           name: "",
-          imgUrl: "",
+          imageUrl: "",
           velocity: 0,
           resistance: 0,
           creationDate: "",

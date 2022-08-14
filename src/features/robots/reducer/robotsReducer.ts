@@ -6,7 +6,7 @@ const initialState: Robot[] = [
   {
     _id: "",
     name: "",
-    imgUrl: "",
+    imageUrl: "",
     velocity: 0,
     resistance: 0,
     creationDate: "",
