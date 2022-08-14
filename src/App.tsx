@@ -1,5 +1,7 @@
+import RobotsList from "./features/robots/components/RobotsList/RobotsList";
+
 function App() {
-  return <div className="App"></div>;
+  return <RobotsList />;
 }
 
 export default App;
