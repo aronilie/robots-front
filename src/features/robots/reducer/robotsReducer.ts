@@ -1,9 +1,10 @@
 import { createReducer } from "@reduxjs/toolkit";
 import Robot from "../models/Robots";
-import * as action from "./actionCreators";
+import * as action from "../actionCreators/actionCreators";
 
 const initialState: Robot[] = [
   {
+    _id: "",
     name: "",
     imgUrl: "",
     velocity: 0,
