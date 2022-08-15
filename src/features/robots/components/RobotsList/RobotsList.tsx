@@ -8,13 +8,11 @@ import RobotsListStyled from "./RobotsListStyled";
 import RobotCard from "../RobotCard/RobotCard";
 
 const RobotsList = (): JSX.Element => {
-  console.log(process.env.REACT_APP_API_URL);
   const robots = useSelector((state: RootState) => state.robots);
 
   const dispatch = useDispatch();
 
   const APIUrl = process.env.REACT_APP_API_URL as string;
-  console.log(process.env.REACT_APP_API_URL);
 
   const repositoryRobots = useMemo(
     () => new RestRepository<Robot>(APIUrl),

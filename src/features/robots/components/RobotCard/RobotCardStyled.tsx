@@ -7,6 +7,7 @@ const RobotCardStyled = styled.li`
   border-radius: 2em;
   padding: 0 2em 2em 2em;
   margin: 3em 19%;
+  min-width: 500px;
 
   .robot-main-container {
     display: flex;
