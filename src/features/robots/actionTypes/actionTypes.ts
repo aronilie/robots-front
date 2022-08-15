@@ -1,3 +1,4 @@
 export enum actionTypes {
-  robotsLoad = "robots@load",
+  loadRobots = "robots@load",
+  createRobot = "robots@create",
 }
