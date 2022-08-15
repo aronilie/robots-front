@@ -12,7 +12,9 @@ const RobotsList = (): JSX.Element => {
 
   const dispatch = useDispatch();
 
+  console.log(process.env.REACT_APP_API_URL);
   const APIUrl = process.env.REACT_APP_API_URL as string;
+  console.log(process.env.REACT_APP_API_URL);
 
   const repositoryRobots = useMemo(
     () => new RestRepository<Robot>(APIUrl),
