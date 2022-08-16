@@ -3,10 +3,10 @@ import styled from "styled-components";
 const RobotCardStyled = styled.li`
   max-width: 50%;
   background-color: #e5f9e0;
-  border: 5px solid #0582ca;
+  border: 5px solid #0d3b66;
   border-radius: 2em;
   padding: 0 2em 2em 2em;
-  margin: 3em 19%;
+  margin: 3em auto;
   min-width: 500px;
 
   .robot-main-container {
@@ -40,6 +40,7 @@ const RobotCardStyled = styled.li`
   }
 
   h1 {
+    text-align: center;
     animation: glitch 3s steps(100) infinite;
     color: #151515;
     font-size: 30px;
