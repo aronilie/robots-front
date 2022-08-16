@@ -1,5 +1,5 @@
 interface Robot {
-  _id: string;
+  _id?: string;
   name: string;
   imageUrl: string;
   velocity: number;
