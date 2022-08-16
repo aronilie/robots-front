@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const CreateRobotStyled = styled.div`
-  margin: 0 auto;
+  margin: 5em auto;
   max-width: 50%;
   background-color: #e5f9e0;
   border: 5px solid #d90429;
