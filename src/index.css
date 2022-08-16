@@ -21,3 +21,15 @@ body {
 * {
   list-style: none;
 }
+
+.create-robots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+label {
+  margin: 5px;
+}

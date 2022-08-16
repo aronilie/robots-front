@@ -7,6 +7,7 @@ interface Input {
   imageUrl: string;
   resistance: number;
   velocity: number;
+
   creationDate: string;
 }
 
@@ -42,7 +43,11 @@ const CreateRobot = (): JSX.Element => {
   };
 
   return (
-    <form onSubmit={createRobotFunction} autoComplete="off">
+    <form
+      onSubmit={createRobotFunction}
+      autoComplete="off"
+      className="create-robots"
+    >
       <label htmlFor="name">Name</label>
       <input
         value={input.name}
@@ -89,10 +94,12 @@ const CreateRobot = (): JSX.Element => {
         onChange={(event) =>
           setInput({ ...input, creationDate: event.target.value })
         }
-        type="text"
+        type="date"
         id="creationDate"
       />
-      <button type="submit"></button>
+      <button className="button" type="submit">
+        Create
+      </button>
     </form>
   );
 };
